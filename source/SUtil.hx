@@ -19,9 +19,10 @@ import openfl.Lib;
 import sys.FileSystem;
 import sys.io.File;
 
+using StringTools;
+
 class SUtil
 {
-	
 	public static function doTheCheck()
 	{
 		#if android
@@ -84,6 +85,7 @@ class SUtil
 		return '';
 		#end
 	}
+
 
 	public static function gameCrashCheck()
 	{
