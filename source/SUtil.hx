@@ -17,8 +17,6 @@ import sys.FileSystem;
 import sys.io.File;
 import flash.system.System;
 
-using StringTools;
-
 class SUtil
 {
 	#if android
@@ -30,8 +28,6 @@ class SUtil
 		#if android
 		if (aDir != null && aDir.length > 0)
 			return aDir;
-		else
-			return aDir = Tools.getExternalStorageDirectory() + '/' + '.' + Application.current.meta.get('file') + '/';
 		#else
 		return '';
 		#end
@@ -69,7 +65,6 @@ class SUtil
 			if (!FileSystem.exists(SUtil.getPath() + 'assets/') && !FileSystem.exists(SUtil.getPath() + 'mods/'))
 			{
 				SUtil.applicationAlert('Error!', "Whoops, seems like you didn't extract the files from the .APK!\nPlease watch the tutorial by pressing OK.");
-				FlxG.openURL('https://youtu.be/zjvkTmdWvfU');
 				System.exit(1);
 			}
 			else
@@ -78,7 +73,6 @@ class SUtil
 				{
 					SUtil.applicationAlert('Error!',
 						"Whoops, seems like you didn't extract the assets/assets folder from the .APK!\nPlease watch the tutorial by pressing OK.");
-					FlxG.openURL('https://youtu.be/zjvkTmdWvfU');
 					System.exit(1);
 				}
 
@@ -86,7 +80,6 @@ class SUtil
 				{
 					SUtil.applicationAlert('Error!',
 						"Whoops, seems like you didn't extract the assets/mods folder from the .APK!\nPlease watch the tutorial by pressing OK.");
-					FlxG.openURL('https://youtu.be/zjvkTmdWvfU');
 					System.exit(1);
 				}
 			}
