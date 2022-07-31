@@ -17,6 +17,8 @@ import sys.FileSystem;
 import sys.io.File;
 import flash.system.System;
 
+using StringTools;
+
 class SUtil
 {
 	#if android
