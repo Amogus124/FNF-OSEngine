@@ -53,8 +53,6 @@ import Discord;
 using StringTools;
 
 class FunkinLua {
-	public static var Function_Stop:Dynamic = #if android "Function_Stop" #else 1 #end;
-	public static var Function_Continue:Dynamic = #if android "Function_Continue" #else 0 #end;
 	public static var Function_Stop:Dynamic = 1;
 	public static var Function_Continue:Dynamic = 0;
 	public static var Function_StopLua:Dynamic = 2;
@@ -539,7 +537,7 @@ class FunkinLua {
 				doPush = true;
 			}
 			else {
-				cervix = SUtil.getPath() + Paths.getPreloadPath(cervix);
+				cervix = Paths.getPreloadPath(cervix);
 				if(FileSystem.exists(cervix)) {
 					doPush = true;
 				}
@@ -578,8 +576,6 @@ class FunkinLua {
 			{
 				cervix = Paths.modFolders(cervix);
 				doPush = true;
-			} else {
-				cervix = SUtil.getPath() + Paths.getPreloadPath(cervix);
 			}
 			else if(FileSystem.exists(cervix))
 			{
@@ -1953,7 +1949,7 @@ class FunkinLua {
 			path = Paths.modsJson(Paths.formatToSongPath(PlayState.SONG.song) + '/' + dialogueFile);
 			if(!FileSystem.exists(path))
 			#end
-				path = SUtil.getPath() + Paths.json(Paths.formatToSongPath(PlayState.SONG.song) + '/' + dialogueFile);
+				path = Paths.json(Paths.formatToSongPath(PlayState.SONG.song) + '/' + dialogueFile);
 
 			luaTrace('Trying to load dialogue: ' + path);
 
@@ -3080,7 +3076,5 @@ class DebugLuaText extends FlxText
 		if(disableTime < 0) disableTime = 0;
 		if(disableTime < 1) alpha = disableTime;
 	}
-	
-}
 
 }
