@@ -35,6 +35,7 @@ class ClientPrefs {
 	public static var opponentStrums:Bool = false;
 	public static var scoreZoom:Bool = true;
 	public static var noReset:Bool = false;
+	public static var showMsText:Bool = true;
 	public static var healthBarAlpha:Float = 1;
 	public static var controllerMode:Bool = #if android true #else false #end;
 	public static var hitsoundVolume:Float = 0;
@@ -47,6 +48,7 @@ class ClientPrefs {
 	public static var cameramoveonnotes:Bool = true;
 	public static var removePerfects:Bool = false;
 	public static var characterTrail:Bool = false;
+	public static var checkForUpdates:Bool = true;
 	public static var gameplaySettings:Map<String, Dynamic> = [
 		'scrollspeed' => 1.0,
 		'scrolltype' => 'multiplicative', 
@@ -133,6 +135,7 @@ class ClientPrefs {
 		FlxG.save.data.scoreZoom = scoreZoom;
 		FlxG.save.data.characterTrail = characterTrail;
 		FlxG.save.data.noReset = noReset;
+		FlxG.save.data.showMsText = showMsText;
 		FlxG.save.data.holdNoteVisibility = holdNoteVisibility;
 		FlxG.save.data.healthBarAlpha = healthBarAlpha;
 		FlxG.save.data.comboOffset = comboOffset;
@@ -158,6 +161,7 @@ class ClientPrefs {
 		FlxG.save.data.underlaneVisibility = underlaneVisibility;
 		FlxG.save.data.pauseMusic = pauseMusic;
 		FlxG.save.data.noteSkinSettings = noteSkinSettings;
+		FlxG.save.data.checkForUpdates = checkForUpdates;
 	
 		FlxG.save.flush();
 
@@ -272,6 +276,9 @@ class ClientPrefs {
 		if(FlxG.save.data.noReset != null) {
 			noReset = FlxG.save.data.noReset;
 		}
+		if(FlxG.save.data.showMsText != null) {
+			showMsText = FlxG.save.data.showMsText;
+		}
 		if(FlxG.save.data.healthBarAlpha != null) {
 			healthBarAlpha = FlxG.save.data.healthBarAlpha;
 		}
@@ -335,6 +342,10 @@ class ClientPrefs {
 		if (FlxG.save.data.mute != null)
 		{
 			FlxG.sound.muted = FlxG.save.data.mute;
+		}
+		if (FlxG.save.data.checkForUpdates != null)
+		{
+			checkForUpdates = FlxG.save.data.checkForUpdates;
 		}
 
 		var save:FlxSave = new FlxSave();

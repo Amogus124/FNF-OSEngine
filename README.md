@@ -1,5 +1,6 @@
 ![](https://media.discordapp.net/attachments/969211146412363828/980124443164672000/23336ff517a80f27.png?width=1101&height=701)
 # Friday Night Funkin' - OS Engine - Modded Psych Engine 
+
 ![](https://img.shields.io/github/issues/notweuz/FNF-OSEngine) ![](https://img.shields.io/github/forks/notweuz/FNF-OSEngine) ![](https://img.shields.io/github/stars/notweuz/FNF-OSEngine) ![](https://img.shields.io/github/license/notweuz/FNF-OSEngine) ![GitHub all releases](https://img.shields.io/github/downloads/notweuz/FNF-OSEngine/total) ![GitHub repo size](https://img.shields.io/github/repo-size/notweuz/FNF-OSEngine) ![](https://img.shields.io/github/contributors/notweuz/FNF-OSEngine)
 
 ## IMPORTANT NOTE:
@@ -9,6 +10,9 @@ This is an Android Port, so if you want to help me just send me a pull request
 I need help with making good wikis. So if you can, ping me in [my discord server](https://discord.gg/5vEHTRjNck) if you wanna help me.
 
 !!Add mods by folders (mods/my-mod/) instead of just (mods/)!!! Or it'll break engine
+
+![](https://img.shields.io/github/issues/notweuz/FNF-OSEngine) ![](https://img.shields.io/github/forks/notweuz/FNF-OSEngine) ![](https://img.shields.io/github/stars/notweuz/FNF-OSEngine) ![](https://img.shields.io/github/license/notweuz/FNF-OSEngine) ![GitHub all releases](https://img.shields.io/github/downloads/notweuz/FNF-OSEngine/total) ![GitHub repo size](https://img.shields.io/github/repo-size/notweuz/FNF-OSEngine) ![](https://img.shields.io/github/contributors/notweuz/FNF-OSEngine) ![GitHub release (latest by date)](https://img.shields.io/github/downloads/notweuz/FNF-OSEngine/latest/total)
+
 
 ## Installation:
 You must have [the most up-to-date version of Haxe](https://haxe.org/download/), seriously, stop using 4.1.5, it misses some stuff.
@@ -24,28 +28,29 @@ If you get an error about StatePointer when using Lua, run `haxelib remove linc_
 If you want video support on your mod, simply do `haxelib install hxCodec` on a Command prompt/PowerShell
 
 ## OS Engine Credits:
-* [weuz_](https://github.com/weuz-github) - Coding
+* [weuz_](https://github.com/notweuz) - Coding
 * [nelifs](https://github.com/nelifs) - Coding and Design
 * [Cooljer](https://github.com/cooljer) - Arts
 
-### Special Thanks
+### OS Engine Special Thanks
 * [jonnycat](https://github.com/McJonnycat) - Fixing bugs in Engine <3.
 * [Kade Engine](https://gamebanana.com/mods/44291) - Circle Note Skin
 
 ## Psych Engine Credits:
-* Shadow Mario - Coding
-* RiverOaken - Arts and Animations
-* bbpanzu - Assistant Coding
+* Shadow Mario - Programmer
+* RiverOaken - Artist
+* Yoshubs - Assistant Programmer
 
 ### Psych Engine Special Thanks
+* bbpanzu - Ex-Programmer
 * shubs - New Input System
-* SqirraRNG - Chart Editor's Sound Waveform base code
-* iFlicky - Delay/Combo Menu Song Composer + Dialogue Sounds
-* PolybiusProxy - .MP4 Loader Extension
+* SqirraRNG - Crash Handler and Base code for Chart Editor's Waveform
+* KadeDev - Fixed some cool stuff on Chart Editor and other PRs
+* iFlicky - Composer of Psync and Tea Time, also made the Dialogue Sounds
+* PolybiusProxy - .MP4 Video Loader Library (hxCodec)
 * Keoiki - Note Splash Animations
-* Smokey - Spritemap Texture Atlas support
-* Cary - OG Resolution code
-* Nebula_Zorua - VCR Shader code
+* Smokey - Sprite Atlas Support
+* Nebula the Zorua - LUA JIT Fork and some Lua reworks & VCR Shader code
 _____________________________________
 
 # Features
@@ -57,7 +62,7 @@ OS Engine is a fork of Psych Engine, so you can use almost every feature from Ps
 ## OS Engine Features
 
 ### Psych Engine mods compability
-Yes, almost every mod for Psych Engine runs on OS Engine (But you need to convert icons to 450x150)
+Yes, almost every mod for Psych Engine runs on OS Engine.
 
 ### Note Skins
 OS Engine adds a note skins system! There's only Default and Circle skins by default.
@@ -87,7 +92,7 @@ You can set lane underlay transparency under arrows by using that functions.
 ![](https://media.discordapp.net/attachments/969211146412363828/969212421887635546/unknown.png?width=1440&height=326)
 
 ### Custom Settings in Chart Editor.
-Now you can enable character trails (Like in thorns or maybe mid fight masses). Or "Camera Follow Notes" like in 99% of mods atm (it's buggy).
+There's multiple new functions in chart editor. Like player/opponent trail, camera move and etc.
 
 ![](https://media.discordapp.net/attachments/969211146412363828/969213936924774430/unknown.png)
 
@@ -101,7 +106,7 @@ Now you can press ESC at title state. And game will ask you do you want to close
 ![](https://media.discordapp.net/attachments/969211146412363828/969214974369099807/unknown.png)
 
 ### Winning icons 
-Instead of 2 icons, there'll be three icons (losing, normal, winning). So you need icon file 450x150, or it won't work
+Instead of 2 icons, there'll be three icons (losing, normal, winning). And yes, you can use double icons (without winning).
 
 ![](https://github.com/weuz-github/FNF-OSEngine/blob/main/assets/preload/images/icons/icon-bf.png?raw=true)
 

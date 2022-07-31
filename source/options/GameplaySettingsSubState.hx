@@ -49,6 +49,13 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 			false); //Default value
 		addOption(option);
 
+		var option:Option = new Option('Display MS Offset On Note Hits',
+			'If checked, a offset (in ms) will appear near notes',
+			'showMsText',
+			'bool',
+			false);
+		addOption(option);
+
 		var option:Option = new Option('Middlescroll',
 			'If checked, your notes get centered.',
 			'middleScroll',
@@ -56,8 +63,8 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 			false);
 		addOption(option);
 
-		var option:Option = new Option('Hide Middlescroll Opponent Notes',
-			'If checked, hides opponent arrows when playing with middlescroll',
+		var option:Option = new Option('Hide Opponent Notes',
+			'If checked, hides opponent arrows when playing',
 			'opponentStrums',
 			'bool',
 			false);
