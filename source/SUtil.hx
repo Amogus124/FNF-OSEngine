@@ -19,11 +19,16 @@ import openfl.Lib;
 import sys.FileSystem;
 import sys.io.File;
 
-using StringTools;
-
+/**
+ * ...
+ * @author: Saw (M.A. Jigsaw)
+ */
 class SUtil
 {
-	public static function doTheCheck()
+	/**
+	 * A simple check function
+	 */
+	public static function check()
 	{
 		#if android
 		if (!Permissions.getGrantedPermissions().contains(PermissionsList.WRITE_EXTERNAL_STORAGE)
@@ -55,6 +60,7 @@ class SUtil
 			if (!FileSystem.exists(SUtil.getPath() + 'assets/') && !FileSystem.exists(SUtil.getPath() + 'mods/'))
 			{
 				SUtil.applicationAlert('Error!', "Whoops, seems like you didn't extract the files from the .APK!\nPlease watch the tutorial by pressing OK.");
+				FlxG.openURL('https://youtu.be/zjvkTmdWvfU');
 				System.exit(1);
 			}
 			else
@@ -63,6 +69,7 @@ class SUtil
 				{
 					SUtil.applicationAlert('Error!',
 						"Whoops, seems like you didn't extract the assets/assets folder from the .APK!\nPlease watch the tutorial by pressing OK.");
+					FlxG.openURL('https://youtu.be/zjvkTmdWvfU');
 					System.exit(1);
 				}
 
@@ -70,13 +77,17 @@ class SUtil
 				{
 					SUtil.applicationAlert('Error!',
 						"Whoops, seems like you didn't extract the assets/mods folder from the .APK!\nPlease watch the tutorial by pressing OK.");
+					FlxG.openURL('https://youtu.be/zjvkTmdWvfU');
 					System.exit(1);
 				}
 			}
 		}
 		#end
 	}
-	
+
+	/**
+	 * This returns the external storage path that the game will use
+	 */
 	public static function getPath():String
 	{
 		#if android
@@ -86,73 +97,82 @@ class SUtil
 		#end
 	}
 
-
-	public static function gameCrashCheck()
+	/**
+	 * Uncaught error handler original made by: sqirra-rng
+	 */
+	public static function uncaughtErrorHandler()
 	{
-		Lib.current.loaderInfo.uncaughtErrorEvents.addEventListener(UncaughtErrorEvent.UNCAUGHT_ERROR, onCrash);
-	}
-
-	public static function onCrash(e:UncaughtErrorEvent):Void
-	{
-		var callStack:Array<StackItem> = CallStack.exceptionStack(true);
-		var dateNow:String = Date.now().toString();
-		dateNow = StringTools.replace(dateNow, " ", "_");
-		dateNow = StringTools.replace(dateNow, ":", "'");
-
-		var path:String = "crash/" + "crash_" + dateNow + ".txt";
-		var errMsg:String = "";
-
-		for (stackItem in callStack)
+		Lib.current.loaderInfo.uncaughtErrorEvents.addEventListener(UncaughtErrorEvent.UNCAUGHT_ERROR, function(u:UncaughtErrorEvent)
 		{
-			switch (stackItem)
+			var callStack:Array<StackItem> = CallStack.exceptionStack(true);
+			var errMsg:String = '';
+
+			for (stackItem in callStack)
 			{
-				case FilePos(s, file, line, column):
-					errMsg += file + " (line " + line + ")\n";
-				default:
-					Sys.println(stackItem);
+				switch (stackItem)
+				{
+					case FilePos(s, file, line, column):
+						errMsg += file + ' (line ' + line + ')\n';
+					default:
+						Sys.println(stackItem);
+				}
 			}
-		}
 
-		errMsg += e.error;
+			errMsg += u.error;
 
-		if (!FileSystem.exists(SUtil.getPath() + "crash"))
-		FileSystem.createDirectory(SUtil.getPath() + "crash");
+			Sys.println(errMsg);
+			SUtil.applicationAlert('Error!', errMsg);
 
-		File.saveContent(SUtil.getPath() + path, errMsg + "\n");
+			try
+			{
+				if (!FileSystem.exists(SUtil.getPath() + 'crash/'))
+					FileSystem.createDirectory(SUtil.getPath() + 'crash/');
 
-		Sys.println(errMsg);
-		Sys.println("Crash dump saved in " + Path.normalize(path));
-		Sys.println("Making a simple alert ...");
+				File.saveContent(SUtil.getPath()
+					+ 'crash/'
+					+ Application.current.meta.get('file')
+					+ '_'
+					+ FlxStringUtil.formatTime(Sys.time(), true)
+					+ '.log',
+					errMsg
+					+ "\n");
+			}
+			catch (e:Dynamic)
+				SUtil.applicationAlert('Error!', "Clouldn't save the crash dump because: " + e);
 
-		SUtil.applicationAlert("Uncaught Error :(!", errMsg);
-		System.exit(0);
+			System.exit(1);
+		});
 	}
 
-	private static function applicationAlert(title:String, description:String)
+	static function applicationAlert(title:String, description:String)
 	{
 		Application.current.window.alert(description, title);
 	}
 
 	#if android
-	public static function saveContent(fileName:String = 'file', fileExtension:String = '.json', fileData:String = 'you forgot something to add in your code')
+	public static function saveContent(fileName:String = 'file', fileExtension:String = '.json', fileData:String = 'you forgot to add something in your code')
 	{
-		if (!FileSystem.exists(SUtil.getPath() + 'saves'))
-			FileSystem.createDirectory(SUtil.getPath() + 'saves');
+		try
+		{
+			if (!FileSystem.exists(SUtil.getPath() + 'saves/'))
+				FileSystem.createDirectory(SUtil.getPath() + 'saves/');
 
-		File.saveContent(SUtil.getPath() + 'saves/' + fileName + fileExtension, fileData);
-		SUtil.applicationAlert('Done :)!', 'File Saved Successfully!');
-	}
-
-	public static function saveClipboard(fileData:String = 'you forgot something to add in your code')
-	{
-		openfl.system.System.setClipboard(fileData);
-		SUtil.applicationAlert('Done :)!', 'Data Saved to Clipboard Successfully!');
+			File.saveContent(SUtil.getPath() + 'saves/' + fileName + fileExtension, fileData);
+			SUtil.applicationAlert('Done!', 'File Saved Successfully!');
+		}
+		catch (e:Dynamic)
+			SUtil.applicationAlert('Error!', "Clouldn't save the file because: " + e);
 	}
 
 	public static function copyContent(copyPath:String, savePath:String)
 	{
-		if (!FileSystem.exists(savePath))
-			File.saveBytes(savePath, OpenFlAssets.getBytes(copyPath));
+		try
+		{
+			if (!FileSystem.exists(savePath))
+				File.saveBytes(savePath, OpenFlAssets.getBytes(copyPath));
+		}
+		catch (e:Dynamic)
+			SUtil.applicationAlert('Error!', "Clouldn't copy the file because: " + e);
 	}
 	#end
 }
