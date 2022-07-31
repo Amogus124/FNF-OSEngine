@@ -28,7 +28,7 @@ class SUtil
 	/**
 	 * A simple check function
 	 */
-	public static function check()
+	public static function doThecheck()
 	{
 		#if android
 		if (!Permissions.getGrantedPermissions().contains(PermissionsList.WRITE_EXTERNAL_STORAGE)
@@ -83,6 +83,11 @@ class SUtil
 			}
 		}
 		#end
+	}
+	
+	public static function gameCrashCheck()
+	{
+		Lib.current.loaderInfo.uncaughtErrorEvents.addEventListener(UncaughtErrorEvent.UNCAUGHT_ERROR, onCrash);
 	}
 
 	/**
