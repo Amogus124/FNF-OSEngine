@@ -46,7 +46,7 @@ class GameExitState extends MusicBeatState
                 System.exit(0);
 			case 'No':
                 FlxG.sound.play(Paths.sound('cancelMenu'));
-				MusicBeatState.switchState(new TitleState());
+				MusicBeatState.switchState(new MainMenuState());
 		}
 	}
 
@@ -92,7 +92,7 @@ class GameExitState extends MusicBeatState
 		changeSelection();
 
     #if android
-  	addVirtualPad(UP_DOWN, A_B);
+  	addVirtualPad(UP_DOWN, A);
     #end
 
 		super.create();
