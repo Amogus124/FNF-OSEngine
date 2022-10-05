@@ -196,6 +196,7 @@ class MainMenuState extends MusicBeatState
 
 		#if android
 		addVirtualPad(UP_DOWN, A_B_E);
+                virtualPad.y = -42
 		#end
 
 		super.create();
@@ -268,7 +269,7 @@ class MainMenuState extends MusicBeatState
 			{
 				selectedSomethin = true;
 				FlxG.sound.play(Paths.sound('cancelMenu'));
-				MusicBeatState.switchState(new TitleState());
+				MusicBeatState.switchState(new GameExitState());
 			}
 
 			if (controls.ACCEPT)
