@@ -37,7 +37,7 @@ class ClientPrefs {
 	public static var noReset:Bool = false;
 	public static var showMsText:Bool = true;
 	public static var healthBarAlpha:Float = 1;
-	public static var controllerMode:Bool = true;
+        public static var controllerMode:Bool = #if android true #else false #end;
 	public static var hitsoundVolume:Float = 0;
 	public static var underlaneVisibility:Float = 0;
 	public static var holdNoteVisibility:Float = 1;
