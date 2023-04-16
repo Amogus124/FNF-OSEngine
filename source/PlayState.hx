@@ -5545,7 +5545,12 @@ class PlayState extends MusicBeatState
 			else
 			{
 				// Rating Percent
-				ratingPercent = Math.min(1, Math.max(0, totalNotesHit / totalPlayed));
+				if (ClientPrefs.removePerfects) {
+				    ratingPercent = ((sicks * 300) + (goods * 100) + (bads * 50) + (misses * 0)) / (((sicks + goods + bads + misses) * 300) * 100)
+				}
+				else {
+				    ratingPercent = ((perfects * 300) + (sicks * 200) + (goods * 100) + bads * 50) + (misses * 0)) / (((perfects + sicks + goods + bads + misses) * 300) * 100)
+				
 				//trace((totalNotesHit / totalPlayed) + ', Total: ' + totalPlayed + ', notes hit: ' + totalNotesHit);
 
 				// Rating Name
