@@ -1756,6 +1756,7 @@ class ChartingState extends MusicBeatState
 				}
 			}
 		}
+		#end
 
 		var blockInput:Bool = false;
 		for (inputText in blockPressWhileTypingOn) {
