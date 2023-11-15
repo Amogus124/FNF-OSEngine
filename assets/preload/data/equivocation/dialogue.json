@@ -1,0 +1,68 @@
+{
+	"dialogue": [
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "expunged",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "why the h are you here"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "old-flipped",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "we are ghere to stop youa!!! also wehere bambi"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "expunged",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "erm"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "expunged",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "hes in my cloning machine that i built"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "old-fliped",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "free him rn!!!!!!!!!!!!!!!!!!!!!!!!!!"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "expunged",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "no"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf-dnb",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "erm im rap battle you"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "expunged",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "hey you are the cheater!!!! that press the buttpn on your keyboard!!!! dont do that again or you will be REALLYsorry like REALLYREALLYREALLY\\nsorry "
+		}
+	]
+}

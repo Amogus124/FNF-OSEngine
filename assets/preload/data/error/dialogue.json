@@ -1,0 +1,44 @@
+{
+	"dialogue": [
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "white",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "screw you im leaving"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf-dnb",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "coolswag"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "error",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "rap against me plz?"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf-dnb",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "i will use a screwdriver with a knife on your dick (think about that lmao that would by funny)"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "error",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "What the fuck."
+		}
+	]
+}

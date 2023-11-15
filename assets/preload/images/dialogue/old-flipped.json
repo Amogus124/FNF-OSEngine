@@ -1,0 +1,25 @@
+{
+	"dialogue_pos": "right",
+	"position": [
+		770,
+		110
+	],
+	"no_antialiasing": true,
+	"scale": 1.75,
+	"animations": [
+		{
+			"anim": "talk",
+			"loop_offsets": [
+				-2,
+				-13
+			],
+			"idle_offsets": [
+				-2,
+				-13
+			],
+			"loop_name": "BF LOOP",
+			"idle_name": "BF0"
+		}
+	],
+	"image": "old_furiosity_dave_portrait"
+}

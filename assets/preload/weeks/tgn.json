@@ -1,0 +1,59 @@
+{
+	"storyName": "Your New Week",
+	"difficulties": "Normal",
+	"hideFreeplay": false,
+	"weekBackground": "stage",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"weekBefore": "tutorial",
+	"startUnlocked": true,
+	"weekCharacters": [
+		"dad",
+		"bf",
+		"gf"
+	],
+	"songs": [
+		[
+			"TGN",
+			"expunged-pixel",
+			[
+				168,
+				0,
+				0
+			]
+		],
+		[
+			"Commander",
+			"apollo",
+			[
+				141,
+				228,
+				45
+			]
+		],
+		[
+			"Axe",
+			"buxzi",
+			[
+				255,
+				136,
+				0
+			]
+		],
+		[
+			"Talladega",
+			"talladega-bambi",
+			[
+				15,
+				91,
+				15
+			]
+		]
+	],
+	"hideStoryMode": true,
+	"weekName": "Custom Week",
+	"hiddenUntilUnlocked": false
+}

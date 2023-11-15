@@ -1,0 +1,84 @@
+{
+	"dialogue": [
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "dave",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "yo"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf-confused",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "wtf happened why are there bambis \\n everywher!"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "dave",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "remember that guy that got mad at you for\\ncheating?"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf-confused",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "yeah"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "dave",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "well, they decided to clone a bunch of bambis\\nfor something called an fnf mod"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf-confused",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "breh"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf-confused",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "where bambi!!!!! (the rael ojne smile)"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "dave",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "IDK!!!!!!!!"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "dave",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "anyways, wanna beat u[p a whole bunch of bambi IMPOSERAMONGUS s to find the real bambi?"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf-brap",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "ok lol"
+		}
+	]
+}

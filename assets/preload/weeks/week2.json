@@ -1,22 +1,50 @@
 {
-	"songs": [
-		["Spookeez", "spooky", [34, 51, 68]],
-		["South", "spooky", [34, 51, 68]],
-		["Monster", "monster", [34, 51, 68]]
+	"storyName": "It 3D Now!",
+	"difficulties": "Normal",
+	"hideFreeplay": false,
+	"weekBackground": "stage",
+	"weekBefore": "week1",
+	"freeplayColor": [
+		146,
+		113,
+		253
 	],
-
+	"startUnlocked": true,
+	"hideStoryMode": false,
+	"songs": [
+		[
+			"choco",
+			"choco-pixel",
+			[
+				46,
+				21,
+				9
+			]
+		],
+		[
+			"goose",
+			"amogus-pixel",
+			[
+				255,
+				90,
+				90
+			]
+		],
+		[
+			"equivocation",
+			"expunged-pixel",
+			[
+				168,
+				0,
+				0
+			]
+		]
+	],
 	"weekCharacters": [
-		"spooky",
+		"dad",
 		"bf",
 		"gf"
 	],
-	"weekBackground": "halloween",
-
-	"storyName": "Spooky Month",
-	"weekBefore": "week1",
-	"weekName": "Week 2",
-	"startUnlocked": true,
-
-	"hideStoryMode": false,
-	"hideFreeplay": false
+	"hiddenUntilUnlocked": false,
+	"weekName": "3d week"
 }

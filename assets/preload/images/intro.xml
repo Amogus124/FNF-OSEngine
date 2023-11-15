@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="intro.png">
+	<!-- Created with Adobe Animate version 22.0.1.105 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="ok0000" x="4" y="4" width="1280" height="720"/>
+	<SubTexture name="ok0001" x="1292" y="4" width="1280" height="720"/>
+	<SubTexture name="ok0002" x="2580" y="4" width="1280" height="720"/>
+	<SubTexture name="ok0003" x="3868" y="4" width="1280" height="720"/>
+	<SubTexture name="ok0004" x="5156" y="4" width="1280" height="720"/>
+	<SubTexture name="ok0005" x="6444" y="4" width="1280" height="720"/>
+	<SubTexture name="ok0006" x="4" y="732" width="1280" height="720"/>
+	<SubTexture name="ok0007" x="1292" y="732" width="1280" height="720"/>
+	<SubTexture name="ok0008" x="2580" y="732" width="1280" height="720"/>
+	<SubTexture name="ok0009" x="3868" y="732" width="1280" height="720"/>
+	<SubTexture name="ok0010" x="5156" y="732" width="1280" height="720"/>
+	<SubTexture name="ok0011" x="6444" y="732" width="1280" height="720"/>
+	<SubTexture name="ok0012" x="4" y="1460" width="1280" height="720"/>
+	<SubTexture name="ok0013" x="1292" y="1460" width="1280" height="720"/>
+	<SubTexture name="ok0014" x="2580" y="1460" width="1280" height="720"/>
+	<SubTexture name="ok0015" x="3868" y="1460" width="1280" height="720"/>
+	<SubTexture name="ok0016" x="5156" y="1460" width="1280" height="720"/>
+	<SubTexture name="ok0017" x="6444" y="1460" width="1280" height="720"/>
+	<SubTexture name="ok0018" x="4" y="2188" width="1280" height="720"/>
+	<SubTexture name="ok0019" x="1292" y="2188" width="1280" height="720"/>
+	<SubTexture name="ok0020" x="2580" y="2188" width="1280" height="720"/>
+	<SubTexture name="ok0021" x="3868" y="2188" width="1280" height="720"/>
+	<SubTexture name="ok0022" x="5156" y="2188" width="1280" height="720"/>
+	<SubTexture name="ok0023" x="6444" y="2188" width="1280" height="720"/>
+	<SubTexture name="ok0024" x="4" y="2916" width="1280" height="720"/>
+	<SubTexture name="ok0025" x="1292" y="2916" width="1280" height="720"/>
+	<SubTexture name="ok0026" x="2580" y="2916" width="1280" height="720"/>
+	<SubTexture name="ok0027" x="3868" y="2916" width="1280" height="720"/>
+	<SubTexture name="ok0028" x="5156" y="2916" width="1280" height="720"/>
+</TextureAtlas>

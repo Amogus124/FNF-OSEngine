@@ -1,0 +1,100 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				40,
+				10
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "left"
+		},
+		{
+			"offsets": [
+				70,
+				70
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up"
+		},
+		{
+			"offsets": [
+				60,
+				20
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "right"
+		},
+		{
+			"offsets": [
+				20,
+				-20
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down"
+		},
+		{
+			"offsets": [
+				36,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "danceLeft",
+			"indices": [],
+			"name": "danceLeft"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "danceRight",
+			"indices": [],
+			"name": "danceRight"
+		},
+		{
+			"offsets": [
+				99,
+				12
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "smash",
+			"indices": [],
+			"name": "smash"
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/long-thong/his_husband",
+	"position": [
+		150,
+		590
+	],
+	"healthicon": "husband-pixel",
+	"flip_x": false,
+	"healthbar_colors": [
+		35,
+		155,
+		31
+	],
+	"camera_position": [
+		-180,
+		-20
+	],
+	"sing_duration": 4,
+	"scale": 1.5
+}

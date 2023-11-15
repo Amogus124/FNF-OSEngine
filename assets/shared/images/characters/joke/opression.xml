@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="opression.png">
+	<!-- Created with Adobe Animate version 20.5.0.29329 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="down0000" x="0" y="0" width="851" height="1040"/>
+	<SubTexture name="down0001" x="851" y="0" width="851" height="1040"/>
+	<SubTexture name="down0002" x="851" y="0" width="851" height="1040"/>
+	<SubTexture name="down0003" x="851" y="0" width="851" height="1040"/>
+	<SubTexture name="idle0000" x="1702" y="0" width="851" height="1036" frameX="0" frameY="-13" frameWidth="877" frameHeight="1049"/>
+	<SubTexture name="idle0001" x="2553" y="0" width="851" height="1040" frameX="-26" frameY="0" frameWidth="877" frameHeight="1049"/>
+	<SubTexture name="idle0002" x="0" y="1040" width="851" height="1040" frameX="-26" frameY="0" frameWidth="877" frameHeight="1049"/>
+	<SubTexture name="idle0003" x="0" y="1040" width="851" height="1040" frameX="-26" frameY="0" frameWidth="877" frameHeight="1049"/>
+	<SubTexture name="left0000" x="851" y="1040" width="851" height="1040"/>
+	<SubTexture name="left0001" x="1702" y="1040" width="821" height="1040" frameX="0" frameY="0" frameWidth="851" frameHeight="1040"/>
+	<SubTexture name="left0002" x="1702" y="1040" width="821" height="1040" frameX="0" frameY="0" frameWidth="851" frameHeight="1040"/>
+	<SubTexture name="left0003" x="1702" y="1040" width="821" height="1040" frameX="0" frameY="0" frameWidth="851" frameHeight="1040"/>
+	<SubTexture name="right0000" x="2523" y="1040" width="851" height="1040"/>
+	<SubTexture name="right0001" x="0" y="2080" width="851" height="1040"/>
+	<SubTexture name="right0002" x="0" y="2080" width="851" height="1040"/>
+	<SubTexture name="right0003" x="0" y="2080" width="851" height="1040"/>
+	<SubTexture name="up0000" x="851" y="2080" width="851" height="1040"/>
+	<SubTexture name="up0001" x="1702" y="2080" width="851" height="1040"/>
+	<SubTexture name="up0002" x="1702" y="2080" width="851" height="1040"/>
+	<SubTexture name="up0003" x="1702" y="2080" width="851" height="1040"/>
+</TextureAtlas>

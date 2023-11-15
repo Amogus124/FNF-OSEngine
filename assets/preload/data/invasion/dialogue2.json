@@ -1,0 +1,44 @@
+{
+	"dialogue": [
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "dave",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "ok lets actually get strated now :)"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "white",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "ERM"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "dave",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "ohmygodwhoareyou"
+		},
+		{
+			"sound": "",
+			"speed": 0.02,
+			"portrait": "white",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "IM BAMBI FROM FNF! I HAVE SONGS LIKE BLOCKED FNF! CORN THEFT (REMAKE)! AND SPAMOPHOBIA!"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf-confused",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "bru!"
+		}
+	]
+}

@@ -1,0 +1,12 @@
+{
+	"dialogue": [
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "dave",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "is it just me or is everything turning 3d"
+		}
+	]
+}

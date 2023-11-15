@@ -1,0 +1,20 @@
+{
+	"dialogue": [
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "amog",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "amogus amogus gus gus gus gus a a a mo mo a a a o o o a a a mo mo a a a o o o"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf-dnb",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "AMONG US?"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="menuStuff.png">
+	<!-- Created with Adobe Animate version 20.5.0.29329 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="awards0000" x="4" y="4" width="283" height="342"/>
+	<SubTexture name="awards_SELECTED0000" x="289" y="4" width="283" height="342"/>
+	<SubTexture name="credits0000" x="574" y="4" width="283" height="342"/>
+	<SubTexture name="credits_SELECTED0000" x="859" y="4" width="283" height="342"/>
+	<SubTexture name="donate0000" x="1144" y="4" width="283" height="342"/>
+	<SubTexture name="donate_SELECTED0000" x="1429" y="4" width="283" height="342"/>
+	<SubTexture name="freeplay0000" x="1714" y="4" width="283" height="342"/>
+	<SubTexture name="freeplay_SELECTED0000" x="4" y="348" width="283" height="342"/>
+	<SubTexture name="options0000" x="289" y="348" width="283" height="342"/>
+	<SubTexture name="options_SELECTED0000" x="574" y="348" width="283" height="342"/>
+	<SubTexture name="story_mode0000" x="859" y="348" width="283" height="342"/>
+	<SubTexture name="story_mode_SELECTED0000" x="1144" y="348" width="283" height="342"/>
+</TextureAtlas>

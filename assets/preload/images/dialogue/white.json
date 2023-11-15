@@ -1,0 +1,25 @@
+{
+	"position": [
+		160,
+		110
+	],
+	"dialogue_pos": "left",
+	"no_antialiasing": false,
+	"scale": 1.75,
+	"image": "white_guy",
+	"animations": [
+		{
+			"idle_offsets": [
+				-2,
+				-13
+			],
+			"loop_offsets": [
+				-2,
+				-13
+			],
+			"anim": "talk",
+			"idle_name": "BF0",
+			"loop_name": "BF LOOP"
+		}
+	]
+}
