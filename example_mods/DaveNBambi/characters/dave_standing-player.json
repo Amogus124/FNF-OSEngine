@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-11,
+				-94
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "DaveAngry Sing Note D",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				15,
+				59
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "DaveAngry Sing Note U",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "DaveAngry idle ",
+			"indices": []
+		},
+		{
+			"offsets": [
+				83,
+				-60
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "DaveAngry Sing Note R"
+		},
+		{
+			"offsets": [
+				-22,
+				-7
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "DaveAngry Sing Note L"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/daves/Dave_Angry",
+	"position": [
+		-160,
+		-140
+	],
+	"healthicon": "angrydave",
+	"flip_x": false,
+	"healthbar_colors": [
+		249,
+		180,
+		207
+	],
+	"camera_position": [
+		80,
+		170
+	],
+	"sing_duration": 4,
+	"scale": 0.7
+}
